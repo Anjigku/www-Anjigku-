@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>動的に生成された表</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>動的に生成された表</h2>
+  <div id="table-container"></div>
+
+  <script>
+    // 表データの定義
+    const tableData = {
+      headers: ["大人", "高校", "中学生", "ここ"],
+      rows: [
+        [1, "山田太郎", 30, "エンジニア"],
+        [2, "鈴木花子", 25, "デザイナー"],
+        [3, "佐藤健", 35, "マネージャー"],
+        [4, "田中美咲", 28, "マーケター"]
+      ]
+    };
+
+    // 表を生成する関数
+    function generateTable(data) {
+      const table = document.createElement("table");
+
+      // ヘッダー行の作成
+      const headerRow = document.createElement("tr");
+      data.headers.forEach(headerText => {
+        const th = document.createElement("th");
+        th.textContent = headerText;
+        headerRow.appendChild(th);
+      });
+      table.appendChild(headerRow);
+
+      // 各行のデータを作成
+      data.rows.forEach(rowData => {
+        const row = document.createElement("tr");
+        rowData.forEach(cellData => {
+          const td = document.createElement("td");
+          td.textContent = cellData;
+          row.appendChild(td);
+        });
+        table.appendChild(row);
+      });
+
+      return table;
+    }
+
+    // 表をページに追加
+    document.getElementById("table-container").appendChild(generateTable(tableData));
+  </script>
+
+</body>
+</html>
