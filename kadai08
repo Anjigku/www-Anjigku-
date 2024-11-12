@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"type ="test/css"href ="style.css">
+    <title>写真の</title>
+</head>
+<body>
+    <h1>写真の</h1>
+    <h2>以下のボタンをクリックすると写真が撮れるます</h2>
+    <div class="row>"
+        div class="column">
+
+        | <img src='photo_1.jpg" width="100%";>
+        
+        </div>
+        
+        <div class="column">
+        
+        <img src="photo_2.jpg" width="100%";>
+        
+        </div>
+        
+        <div class="column">
+        
+        <img src="photo_3.jpg" width="100%";>
+        
+        </div>
+        
+        <div class="column">
+        
+        |<img src="photo_4.jpg" width="100%";>
+        
+        </div>
+        
+        <div class="column">
+        
+        <img src="photo_5.jpg" width="100%";>
+        
+        </div>
+        
+        < div class="column">
+        
+        <img src="photo_6.jpg" width="100%";>
+        
+        </div>
+        
+        <div class="column">
+        
+        <img src="photo_7.jpg" width="100%";>
+        
+        
+    
+        
+    
+        
+    
+        
+    
+        
+
+        
+    
+        
+    
+        
+        
+        
+        
+        
+        
+        
+    
+        
+    
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+    
+        
+        </body>
+        
+        42
+        
+        </html>
+        
+        </div>
+        
+        <div class="column">
+        
+        <img src="photo_8.jpg" width="100%";  
+    
+    
+</body>
+</html>
