@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>写真一覧表示</title>
+  <style>
+    #photo-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .photo {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <button id="showPhotosButton">写真を表示</button>
+  <div id="photo-container"></div>
+
+  <script>
+    document.getElementById("showPhotosButton").addEventListener("click", function() {
+      // 写真のURLの配列
+      const photos = [
+        "photo1.jpg",
+        "photo2.jpg",
+        "photo3.jpg",
+        "photo4.jpg",
+        "photo5.jpg",
+        "photo6.jpg",
+        "photo7.jpg",
+        "photo8.jpg"
+      ];
+
+      // 写真を表示するコンテナ
+      const container = document.getElementById("photo-container");
+
+      // 各写真をdiv内に表示
+      photos.forEach(photo => {
+        const img = document.createElement("img");
+        img.src = photo;
+        img.className = "photo";
+        container.appendChild(img);
+      });
+
+      // ボタンを削除
+      this.remove();
+    });
+  </script>
+</body>
+</html>
